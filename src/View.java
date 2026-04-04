@@ -10,7 +10,7 @@ public class View {
             System.out.println("====TODO LIST====");
             System.out.println("1.목록보기");
             System.out.println("2.생성");
-            System.out.println("3.추가");
+            System.out.println("3.수정");
             System.out.println("4.삭제");
             System.out.println("5.종료");
             System.out.println("메뉴를 선택하세요: ");
@@ -37,7 +37,7 @@ public class View {
         }
 
         String getString(String sc) {
-            System.out.println("추가할 할일 내용을 입력하세요:");
+            System.out.println("수정할 할일 내용을 입력하세요:");
             return s.nextLine();
         }
 
