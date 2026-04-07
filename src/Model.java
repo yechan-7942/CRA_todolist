@@ -10,11 +10,13 @@ public class Model {
         statuses[size++] = "미완료";
     }
 
-    void upsdate(int i ,String content) {
+
+    void update(int i , String content) {
+
         contents[i] = content;
     }
 
-    void cstatus(int i) {
+    void status(int i) {
         if(statuses[i].equals("미완료")) {
             statuses[i] = "완료";
         }
@@ -22,7 +24,6 @@ public class Model {
             statuses[i] = "미완료";
         }
         }
-
 
 
     String delete(int i) {

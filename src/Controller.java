@@ -19,9 +19,9 @@ public class Controller {
                 int i = v.getInt() - 1;
                 v.print("1. 내용수정 2. 상태변경");
                 if (v.getInt() == 1) {
-                    m.upsdate(i, v.getString("새 내용 :"));
+                    m.update(i, v.getString("새 내용 :"));
                 } else {
-                    m.cstatus(i);
+                    m.status(i);
                     v.print("수정되었습니다");
                 }
             } else if (choice == 4) {
