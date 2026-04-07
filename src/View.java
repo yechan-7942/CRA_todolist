@@ -1,4 +1,4 @@
-
+//사용자에게 보이는거니까 어떤 값을 입력 받을지, 보여줄지
 import java.util.Scanner;
 
 public class View {
@@ -34,14 +34,10 @@ public class View {
         }
 
         String getString(String sc) {
-            System.out.println("생성할 할일 내용을 입력하세요:");
+            System.out.println(sc);
             return s.nextLine();
         }
 
-        String getString1(String sc) {
-            System.out.println("수정할 내용을 입력하세요");
-            return s.nextLine();
-        }
 
         void print(String s){
 

@@ -1,4 +1,5 @@
 
+//흐름 관리
 public class Controller {
     Model m = new Model();
     View v = new View();
@@ -12,7 +13,7 @@ public class Controller {
                 v.showlist(m);
             }
             else if (choice == 2) {
-                m.add(v.getString("내용 :"));
+                m.add(v.getString("생성할 내용 :"));
                 v.print("추가되었습니다");
             }
 
@@ -21,7 +22,7 @@ public class Controller {
                 int i = v.getInt() - 1;
                 v.print("1. 내용수정 2. 상태변경");
                 if (v.getInt() == 1) {
-                    m.update(i, v.getString1("새 내용 :"));
+                    m.update(i, v.getString("수정할 내용"));
                 } else {
                     m.status(i);
                     v.print("수정되었습니다");

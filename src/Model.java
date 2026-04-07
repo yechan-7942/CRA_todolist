@@ -1,5 +1,4 @@
 
-
 public class Model {
     String [] contents = new String[100];
     String [] statuses = new String[100];
@@ -25,8 +24,6 @@ public class Model {
             statuses[i] = "미완료";
         }
         }
-
-
 
     String delete(int i) {
         String deleted = contents[i];
