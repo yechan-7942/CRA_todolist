@@ -16,6 +16,7 @@ public class Model {
         contents[i] = content;
     }
 
+    //미완료이면 완료로 바꾸기, 완료면 미완료로 바꾸기
     void status(int i) {
         if(statuses[i].equals("미완료")) {
             statuses[i] = "완료";
@@ -24,6 +25,7 @@ public class Model {
             statuses[i] = "미완료";
         }
         }
+
 
 
     String delete(int i) {

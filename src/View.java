@@ -28,20 +28,23 @@ public class View {
         }
 
         int getInt() {
-            try{
-                return Integer.parseInt(s.nextLine());
-            }
-            catch(Exception e){
-                return -1;
-            }
+            int get =  s.nextInt();
+            s.nextLine();
+            return get;
         }
 
         String getString(String sc) {
-            System.out.println("수정할 할일 내용을 입력하세요:");
+            System.out.println("생성할 할일 내용을 입력하세요:");
+            return s.nextLine();
+        }
+
+        String getString1(String sc) {
+            System.out.println("수정할 내용을 입력하세요");
             return s.nextLine();
         }
 
         void print(String s){
+
             System.out.println(s);
         }
 
